@@ -66,6 +66,41 @@ header nav ul li a:hover {
 }
 /* Header Styles End */
 
+section {
+    padding: 20px 35px;
+}
+
+.my-work div {
+    padding: 20px 35px;
+    background-color: var(--secondary-color);
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 30%;
+}
+
+.my-work a {
+    text-decoration: none;
+    font-size: 1.55vw;
+    color: var(--tertiary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-work a:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+}
+
+section h1 {
+    font-size: 36px;
+    color: var(--secondary-color);
+}
+
 /* Footer Styles Start */
 footer {
     padding: 20px 35px;
