@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cameron Cole</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
@@ -30,8 +31,8 @@
 
     <!-- About Section -->
     <section>
-        <h1 id="about-me">About Me</h1>
-        <div>
+        <h1 id="about-me" class="m-4">About Me</h1>
+        <div class="m-4">
             <h2>Hello. My name is Cam.</h2>
             <p>
                 I am an aspiring software engineer. I currently work at Target as an Inventory Analyst and I graduated from the Univeristy of Wisconsin - Madison with a degree in
@@ -41,21 +42,73 @@
     </section>
 
     <!-- My Work Section -->
-    <section class="my-work">
-        <h1 id="my-work">My Work</h1>
-        <div>
-            <a href="https://github.com/cam-cole/run-buddy">Run Buddy</a>
-        </div>
-        <div>
-            <a href="https://github.com/cam-cole/robot-gladiators">Robot Gladiators</a>
-        </div>
-        <div>
-            <a href="https://github.com/cam-cole/calculator">Calculator</a>
-        </div>
-        <div>
-            <a href="https://github.com/cam-cole/dice_game">Dice Game</a>
+    <section id="my-work">
+        <h1 class="m-4">My Work</h1>
+        <div class="columns is-variable is-3 m-4">
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="m-2 title is-5">Weather Dashboard</h2>
+                    </div>
+                    <div class="card-image">
+                        <a href="https://cam-cole.github.io/weather-dashboard" target="_blank"><img src="./assets/images/weather-dashboard-screenshot.png" alt="weather dashboard"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="m-2 title is-5">JavaScipt Quiz</h2>
+                    </div>
+                    <div class="card-image">
+                        <a href="https://cam-cole.github.io/javascript-quiz" target="_blank"><img src="./assets/images/javascript-quiz-screenshot.png" alt="javascript quiz"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="m-2 title is-5">SunFund</h2>
+                    </div>
+                    <div class="card-image">
+                        <a href="https://carljmcgee.github.io/Project1-travel-app/" target="_blank"><img src="./assets/images/sunfund-screenshot.png" alt="sunfund"></a>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <div class="columns is-variable is-3 m-4">
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="m-2 title is-5">Robot Gladiators</h2>
+                    </div>
+                    <div class="card-content">
+                        <a href="https://github.com/cam-cole/robot-gladiators">Robot Gladiators</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="m-2 title is-5">Calculator</h2>
+                    </div>
+                    <div class="card-content">
+                        <a href="https://github.com/cam-cole/calculator">Calculator</a>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="m-2 title is-5">Dice Game</h2>
+                    </div>
+                    <div class="card-content">
+                        <a href="https://github.com/cam-cole/dice_game">Dice Game</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
