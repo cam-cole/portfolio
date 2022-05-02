@@ -11,27 +11,54 @@
 </head>
 <body>
     <header>
-        <h1>
-            <a href="/">Cameron Cole</a>
-        </h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#my-work">My Work</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact</a>
-                </li>
-            </ul>
-        </nav>
+        <nav class="navbar has-background-link" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item title is-4 has-text-white m-2">
+                Home
+              </a>
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu has-background-link">
+              <div class="navbar-start">
+                
+              </div>
+          
+              <div class="navbar-end">
+                <a class="navbar-item title is-5 has-text-white m-2">
+                    About
+                  </a>
+            
+                  <a class="navbar-item title is-5 has-text-white m-2">
+                    My Work
+                  </a>
+            
+                  <a class="navbar-item title is-5 has-text-white m-2">
+                    Contact
+                  </a>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <!-- About Section -->
     <section>
-        <h1 id="about-me" class="m-4">About Me</h1>
+        <div class="columns m-2">
+            <div class="column is-half has-text-centered">
+                <p class="title is-2">Hello, my name is</p>
+                <p class="title is-1 has-text-link">Cameron Cole</p>
+            </div>
+            <div class="column is-half has-text-centered">
+                <img src="./assets/images/programming.png" alt="">
+            </div>
+
+        </div>
+        <h1 id="about-me" class="title is-4 m-4">About Me</h1>
         <div class="m-4">
             <h2>Hello. My name is Cam.</h2>
             <p>
@@ -43,12 +70,12 @@
 
     <!-- My Work Section -->
     <section id="my-work">
-        <h1 class="m-4">My Work</h1>
+        <h1 class="title is-4 m-4">My Work</h1>
         <div class="columns is-variable is-3 m-4">
             <div class="column is-one-third">
                 <div class="card">
-                    <div class="card-header">
-                        <h2 class="m-2 title is-5">Weather Dashboard</h2>
+                    <div class="card-header has-background-link">
+                        <h2 class="m-2 title is-5 has-text-white">Weather Dashboard</h2>
                     </div>
                     <div class="card-image">
                         <a href="https://cam-cole.github.io/weather-dashboard" target="_blank"><img src="./assets/images/weather-dashboard-screenshot.png" alt="weather dashboard"></a>
@@ -57,8 +84,8 @@
             </div>
             <div class="column is-one-third">
                 <div class="card">
-                    <div class="card-header">
-                        <h2 class="m-2 title is-5">JavaScipt Quiz</h2>
+                    <div class="card-header has-background-link">
+                        <h2 class="m-2 title is-5 has-text-white">JavaScipt Quiz</h2>
                     </div>
                     <div class="card-image">
                         <a href="https://cam-cole.github.io/javascript-quiz" target="_blank"><img src="./assets/images/javascript-quiz-screenshot.png" alt="javascript quiz"></a>
@@ -67,8 +94,8 @@
             </div>
             <div class="column is-one-third">
                 <div class="card">
-                    <div class="card-header">
-                        <h2 class="m-2 title is-5">SunFund</h2>
+                    <div class="card-header has-background-link">
+                        <h2 class="m-2 title is-5 has-text-white">SunFund</h2>
                     </div>
                     <div class="card-image">
                         <a href="https://carljmcgee.github.io/Project1-travel-app/" target="_blank"><img src="./assets/images/sunfund-screenshot.png" alt="sunfund"></a>
@@ -80,8 +107,8 @@
         <div class="columns is-variable is-3 m-4">
             <div class="column is-one-third">
                 <div class="card">
-                    <div class="card-header">
-                        <h2 class="m-2 title is-5">Robot Gladiators</h2>
+                    <div class="card-header has-background-link">
+                        <h2 class="m-2 title is-5 has-text-white">Robot Gladiators</h2>
                     </div>
                     <div class="card-content">
                         <a href="https://github.com/cam-cole/robot-gladiators">Robot Gladiators</a>
@@ -90,8 +117,8 @@
             </div>
             <div class="column is-one-third">
                 <div class="card">
-                    <div class="card-header">
-                        <h2 class="m-2 title is-5">Calculator</h2>
+                    <div class="card-header has-background-link">
+                        <h2 class="m-2 title is-5 has-text-white">Calculator</h2>
                     </div>
                     <div class="card-content">
                         <a href="https://github.com/cam-cole/calculator">Calculator</a>
@@ -100,8 +127,8 @@
             </div>
             <div class="column is-one-third">
                 <div class="card">
-                    <div class="card-header">
-                        <h2 class="m-2 title is-5">Dice Game</h2>
+                    <div class="card-header has-background-link">
+                        <h2 class="m-2 title is-5 has-text-white">Dice Game</h2>
                     </div>
                     <div class="card-content">
                         <a href="https://github.com/cam-cole/dice_game">Dice Game</a>
@@ -113,32 +140,42 @@
 
     <!-- Contact Section -->
     <section>
+        <div>
+            <div class="card m-4">
+                <div class="card-header has-background-link">
+                    <h2 class="m-2 title is-5 has-text-white">Contact Me</h2>
+                </div>
+                <div class="card-content">
+                    <div class="field">
+                        <label class="label">Name</label>
+                        <div class="control">
+                          <input class="input" type="text" placeholder="Text input">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control">
+                          <input class="input" type="email" placeholder="Email input">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Message</label>
+                        <div class="control">
+                          <textarea class="textarea" placeholder="Textarea"></textarea>
+                        </div>
+                      </div>
+                </div>
+                
 
+            </div>
+        </div>
     </section>
 
     <!-- Footer Section -->
     <footer>
-        <h2 id="contact-me">
-            Contact Me
-        </h2>
-        <nav>
-            <ul>
-                <li>
-                    <a href="">608-712-1198</a>
-                </li>
-                <li>
-                    <a href="mailto: camcole065@gmail.com">camcole065@gmail.com</a>
-                </li>
-                <li>
-                    <a href="https://github.com/cam-cole">GitHub</a>
-                </li>
-                <li>
-                    <a href="https://medium.com/@camcole065">Medium</a>
-                </li>
-            </ul>
-        </nav>
     </footer>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
