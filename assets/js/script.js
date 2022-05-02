@@ -2,3 +2,30 @@ $(".navbar-burger").click(function() {
     $(".navbar-burger").toggleClass("is-active");
     $(".navbar-menu").toggleClass("is-active");
 })
+
+$('#about-button').on("click", function() {
+    document.querySelector('#about-me').scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+    });
+})
+
+$('#my-work-button').on("click", function() {
+    document.querySelector('#my-work').scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+    })
+})
+
+$('#contact-button').on("click", function() {
+    document.querySelector('#contact').scrollIntoView({
+        behavior: 'smooth',
+        block: 'center'
+    })
+})
+
+$('#home-button').on("click", function() {
+    document.querySelector('#home').scrollIntoView({
+        behavior: 'smooth'
+    })
+})
