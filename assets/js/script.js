@@ -29,3 +29,10 @@ $('#home-button').on("click", function() {
         behavior: 'smooth'
     })
 })
+
+$('#submit').on("click", function() {
+    var contactName = $("#contact-name").val();
+    var emailBody = $("#email-body").val();
+    var emailLink = "mailto:camcole065@gmail.com?subject=" + contactName + " wants to connect!&body=" + emailBody;
+    window.location.href = emailLink;
+})
